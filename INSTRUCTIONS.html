@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html&#8594 charset=utf-8">
+<title>Rm2k Tools - Fake Fullscreen</title>
+<style>
+code {
+	display: inline-block;
+	padding: 4px 12px 4px 12px;
+	font-family: monospace;
+	background-color:#f6f9e3;
+	border:1px dotted #004080;
+	color:#10205f;
+	overflow: hidden;
+}
+a {
+	display: inline-block;
+	color: blue;
+	padding: 12px;
+	text-decoration: none;
+	font-weight: bold;
+}
+</style>
+</head>
+<body>
+<h1>Instructions:</h1>
+<pre><h3>[EN-US]:</h3>
+Move the Game.exe file to your project folder and run it
+If you need to change the settings, edit the file RPG_RT.ini
+
+Insert this line to start the game in stretched mode:
+<code>Stretched=1</code>
+
+Insert this line to allow the player to toggle between aspect ratio and stretched with the F3 key:
+<code>F3Enabled=1</code>
+
+Every time you press the key the configuration will be automatically saved in RPG_RT.ini,
+so the player will not need to press the key again the next time he opens the game.
+
+Change Screenshot key, the options are F1, F2 (Default), F6, F7, F8, F9, F10, F11, 0 to disable
+<code>Screenshotkey=F1</code> &#8594 Example
+<code>Screenshotkey=0</code> &#8594 Disabled
+(Any other value will be considered ZERO)
+
+
+<u>Change ScreenshotFolder path, examples:</u>
+<code>ScreenshotPath=%UserDocs%</code>
+<code>ScreenshotPath=%UserPics%</code>
+
+All options:
+%UserDocs%            &#8594 C:\users\{UserFolder}\Documents\{GameDirName}
+%UserPics%            &#8594 C:\users\{UserFolder}\Pictures\Screenshots\{GameDirName}
+%UserRoaming%         &#8594 C:\Users\{UserFolder}\AppData\Roaming\{GameDirName}
+
+<u>Change ScreenshotFolder name, examples:</u>
+(Does not work with variables or symbols)
+<code>ScreenshotFolder=Snapshot</code>
+<code>ScreenshotFolder=_Screenshot</code>
+<code>ScreenshotFolder=Photos</code>
+<code>ScreenshotFolder=Capture</code>
+<code>ScreenshotFolder=%WinDir%</code> &#8594 C:\users\{UserFolder}\Documents\WinDir
+
+Example in RPG_RT.ini:
+<code>
+[RPG_RT]
+GameTitle=My Adventure
+MapEditMode=2
+MapEditZoom=0
+Fullpackageflag=1
+F3Enabled=1
+Stretched=0
+ScreenshotPath=%UserDocs%
+ScreenshotFolder=Snapshot
+</code>
+
+Requests or questions:
+<a href="https://forums.rpgmakerweb.com/index.php?threads/rm2k-fake-fullscreen.154698/">&#9829; https://forums.rpgmakerweb.com/</a>
+
+<hr />
+
+<h1>Instruções:</h1>
+<h3>[PT-BR]:</h3>
+Mova o arquivo Game.exe para a pasta do seu projeto e execute-o
+Se precisar alterar as configurações edite o arquivo RPG_RT.exe
+
+Insira esta linha para iniciar o jogo no modo estendido:
+<code>Stretched=1</code>
+
+Insira esta linha para permitir que o player alterne entre a modo tela proporcional e esticada com a tecla F3:
+<code>F3Enabled=1</code>
+
+Toda vez que pressionar a tecla a configuração ela será salva automaticamente no RPG_RT.ini,
+então o jogador não precisará apertar a tecla novamente na próxima vez que abrir o jogo.
+
+Mudar a tecla de captura, as opções são F1, F2 (Default), F2, F6, F7, F8, F9, F10, F11 e 0 para desabilitar.
+<code>Screenshotkey=F1</code> &#8594 Exemplo
+<code>Screenshotkey=0</code> &#8594 Desabilita
+(Qualquer outro valor será considerado ZERO)
+
+
+<u>Mudando o caminho para a pasta de capturas de tela, exemplos:</u>
+<code>ScreenshotPath=%UserDocs%</code>
+<code>ScreenshotPath=%UserPics%</code>
+
+Todas as opções:
+%UserDocs%          &#8594 C:\users\{Pasta do usuário}\Documents\{Mesmo nome da pasta do jogo}
+%UserPics%          &#8594 C:\users\{Pasta do usuário}\Pictures\Screenshots\{Mesmo nome da pasta do jogo}
+%UserRoaming%       &#8594 C:\Users\{Pasta do usuário}\AppData\Roaming\{Mesmo nome da pasta do jogo}
+
+
+<u>Alterando o nome da pasta aonde serão salvas as capturas de tela:</u>
+(Não aceita variaveis ou simbolos)
+<code>ScreenshotFolder=Snapshot</code>
+<code>ScreenshotFolder=_Screenshot</code>
+<code>ScreenshotFolder=Fotos</code>
+<code>ScreenshotFolder=Capturas</code>
+<code>ScreenshotFolder=%WinDir%</code> &#8594 C:\users\{Pasta do usuário}\Documents\WinDir
+
+Exemplo no RPG_RT.ini:
+<code>[RPG_RT]
+GameTitle=Minha Aventura
+MapEditMode=2
+MapEditZoom=0
+Fullpackageflag=1
+F3Enabled=1
+Stretched=0
+ScreenshotPath=%UserDocs%
+ScreenshotFolder=Capturas
+</code>
+
+Pedidos ou dúvidas:
+<a href="https://condadobraveheart.com/threads/rm2k-fullscreen-falso.7740/">&#9829; https://condadobraveheart.com/</a>
+<a href="https://centrorpg.com/index.php?topic=26112">&#9829; https://centrorpg.com/</a>
+</pre>
+</body>
+</html>
